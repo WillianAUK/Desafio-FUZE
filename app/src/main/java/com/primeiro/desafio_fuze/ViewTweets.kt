@@ -23,13 +23,15 @@ class ViewTweets : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_tweets)
 
+        // A parte a seguir possui um bug que acaba por fechar a aplicação
+
+        /*
         val tweets_ = DataTweet(applicationContext)
         //var intent = Intent(this, UserTimeline::class.java)
         recycler_tweet.removeAllViewsInLayout()
         var retorno:MutableList<DataTweet.ViewTweetData> = mutableListOf()
 
         listTweets = tweets_.getListTweet() as ArrayList<TweetObj>
-
 
         for (i in 1..listTweets.count()-1){
             var view = tweets_.viewTweetData {
@@ -57,7 +59,7 @@ class ViewTweets : AppCompatActivity() {
                     }
             }
 
-        })
+        })*/
 
         //voltar a tela inicial
         bt_back_menu.setOnClickListener{
